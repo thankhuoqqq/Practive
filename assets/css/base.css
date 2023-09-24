@@ -1,0 +1,141 @@
+:root {
+    --white-color: #fff;
+    --blabk-color: #000;
+    --text-color: #333;
+    --primary-text: #e22d2d;
+
+    --primary-color: #e2a7ba;
+    --container-color:  #FFE4E1;
+    --background-color: #ffedeaff;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--container-color);
+}
+
+.title {
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 2px 0 0 16px;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 16px;
+    background-color: var(--background-color);
+    border: 3px;
+}
+
+.grid__column-1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.grid__column-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__product-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.8;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.grid__productdetail-img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__inner {
+    background-color: var(--background-color);
+    width: 65rem;
+    height: 32rem;
+    border-radius: 3px;
+}
+
+.grid__productdetail-img {
+    width: 28rem;
+    height: 28rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid__subrowdetail {
+    width: 100%;
+    background-color: var(--brightpink-color);
+}
+
+.grid__rowdetail {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__columndetail-2 {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
